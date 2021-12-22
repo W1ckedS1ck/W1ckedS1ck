@@ -13,3 +13,9 @@ https://github.com/W1ckedS1ck/python-app/tree/main/FinalProject
 
 Terraform self-development - https://github.com/W1ckedS1ck/Terraform  
 Here I am going to work with AWS and GCP as well.  
+
+
+
+Plans for the nearest future:
+CRI-O
+IaC (AWS, GCP, ???)
