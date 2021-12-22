@@ -16,6 +16,6 @@ Here I am going to work with AWS and GCP as well.
 
 
 
-Plans for the nearest future:
-CRI-O
-IaC (AWS, GCP, ???)
+Plans for the nearest future:  
+CRI-O  
+IaC (AWS, GCP, ???)  
