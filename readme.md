@@ -1,3 +1,4 @@
+![](https://komarev.com/ghpvc/?username=W1ckedS1ck&label=Views+Since+Dec2021&color=blue)
 # Hello, my name is Vitali and I'm looking for a position of junior DevOps Engineer.  
 
 **Here you can see some of my tasks**  
