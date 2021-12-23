@@ -1,6 +1,6 @@
 # Hello, my name is Vitali and I'm looking for a position of junior DevOps Engineer.  
 
-Here you can see some of my tasks  
+**Here you can see some of my tasks**  
 
 Work with git -                 https://github.com/W1ckedS1ck/material-design-template/tree/master/Week1WA  
 Work with Jenkins -             https://github.com/W1ckedS1ck/material-design-template/tree/master/Week2_CICD_tools  
@@ -17,5 +17,6 @@ Here I am going to work with AWS and GCP as well.
 
 
 Plans for the nearest future:  
-CRI-O  
-IaC (AWS, GCP, ???)  
+- [ ] CRI-O  
+- [ ] IaC (AWS, GCP, ???)  
+- [ ] Zabbix
