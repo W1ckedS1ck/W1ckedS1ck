@@ -1,21 +1,33 @@
-![Profile Views](https://komarev.com/ghpvc/?username=W1ckedS1ck&label=Views+Since+Dec2021&color=blue)
+[![Profile views](https://komarev.com/ghpvc/?username=W1ckedS1ck&color=blueviolet&style=flat-square&label=Profile+views)](https://github.com/W1ckedS1ck)
 
-## Hello, I'm Vitaly, and this is my place where I can improve my skills and just have a good time.  
-### Here are some tasks I've worked on:
-- **[Git](https://github.com/W1ckedS1ck/material-design-template/tree/master/Week1WA)**  
-- **[Jenkins](https://github.com/W1ckedS1ck/material-design-template/tree/master/Week2_CICD_tools)**  
-- **[Docker & Kubernetes](https://github.com/W1ckedS1ck/python-app/tree/main/Week3_Docker_K8s)**  
-- **[Databases & Kafka](https://github.com/W1ckedS1ck/DBandKafka)**  
-- **[Ansible](https://github.com/W1ckedS1ck/Ansible/tree/main/ansible_VitaliK)** *(No detailed description available)*  
+# Vitali Kuts · Infrastructure / DevOps Engineer
 
-#### **[Final Project](https://github.com/W1ckedS1ck/python-app/tree/main/FinalProject)**  (Deploying code from Git to Kubernetes via Jenkins, then updating it, with integrated monitoring.)
----
-### **Self-Development Projects (Just for fun):**
-- **[Terraform](https://github.com/W1ckedS1ck/Terraform)**  
-- **[ChatGPT Coding](https://github.com/W1ckedS1ck/ChatGPT_Prompting)**  
-- **[GitLab](https://github.com/W1ckedS1ck/SelfPractice/tree/main/PlayWithGiltab)**  
-- **[Prometheus + Grafana basics + Victoria Metrics](https://github.com/W1ckedS1ck/SelfPractice/tree/main/Prom%26grafanaInAWS)**  
-- **[Vagrant for VirtBox](https://github.com/W1ckedS1ck/SelfPractice/tree/main/Vagrant)**
----
-### **Plans for the Near Future:**
-- [ ] ???
+I design, automate and operate production infrastructure end-to-end:
+Terraform → Ansible → CI/CD → observability → disaster recovery.
+
+Co-founder & CTO of **DreamSeed** — a live global social experiment with real users, accounts and payments. I own everything below the application layer.
+
+## 🌱 Flagship: [DreamSeed Infrastructure](https://github.com/W1ckedS1ck/DreamSeed)
+
+Production IaC powering [dreamseed.online](https://dreamseed.online) — not a demo:
+
+- **Zero → live server in ~8 min** — one command orchestrates Terraform (AWS + Hetzner) and 17 idempotent Ansible roles across 9 playbooks
+- **DR rehearsed weekly by robots** — ephemeral server: real backup → simulated disaster → restore from local *and* cloud paths → 60+ service assertions; RTO < 5 min proven in CI, not claimed in a runbook
+- **11 CI gates per push** — ShellCheck, ansible-lint, Terraform lint/validate/fmt, Checkov, Trivy, Gitleaks (full history), zizmor, actionlint, pre-commit
+- **Multi-region observability** — Grafana Cloud synthetic probes (3 continents) + Better Stack watchdogs + 27 local alert rules → Telegram
+- **Secrets discipline** — Ansible Vault source of truth, SHA-pinned Actions, tokens never in argv, full-history leak scanning
+- **Safety by design** — prod deploys behind environment gates, destroy requires typed confirmation, daily drift detection with alerts
+
+📖 [Architecture & runbooks](https://github.com/W1ckedS1ck/DreamSeed/wiki) · 🌐 [Live status page](https://status.dreamseed.online)
+
+## 🧰 Stack
+
+`Terraform` · `Ansible` · `GitHub Actions` · `Bash/Python` · `AWS` · `Hetzner` · `Cloudflare` · `Grafana / VictoriaMetrics / Loki` · `MariaDB` · `Redis` · `Nginx` · `Linux hardening`
+
+## 📚 Background
+
+Hands-on path into infrastructure: Jenkins pipelines, Docker/Kubernetes, GitLab CI and monitoring labs (see repositories), then building and operating real production systems at DreamSeed since 2026.
+
+<!--
+Quick nav for humans: flagship repo → pinned below.
+-->
