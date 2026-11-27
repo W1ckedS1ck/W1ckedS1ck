@@ -57,5 +57,4 @@ flowchart LR
 
 ## 📫 Contact
 
-Questions about the infrastructure: open a [discussion](https://github.com/W1ckedS1ck/DreamSeed/discussions)
-in DreamSeed. I reply there.
+Questions about the infrastructure are welcome as issues in [DreamSeed](https://github.com/W1ckedS1ck/DreamSeed/issues).
