@@ -178,6 +178,7 @@ These are the parts of the repo I would actually hand to a new engineer.
 | [**Terraform**](https://github.com/W1ckedS1ck/Terraform) | modules, providers and state layout, built as a lab |
 | [**Ansible**](https://github.com/W1ckedS1ck/Ansible) | roles, playbooks and inventories, built as a lab |
 | [**DBandKafka**](https://github.com/W1ckedS1ck/DBandKafka) | data-plane experiments |
+| [**telethon-service-template**](https://github.com/W1ckedS1ck/telethon-service-template) | a userbot service built the production way: env-only config, dry-run by default, rate limits, systemd unit, CI |
 
 ## 🐍 Contribution graph
 
