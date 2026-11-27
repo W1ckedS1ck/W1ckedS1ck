@@ -1,0 +1,45 @@
+name: Refresh profile README
+
+# Pulls the current numbers and run results out of the DreamSeed repository
+# and folds them into the generated blocks of readme.md.
+on:
+  schedule:
+    - cron: "0 5 * * *"  # daily, 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh generated blocks
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/update_readme.py --write
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet; then
+            echo "Nothing to update"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add readme.md
+          git commit -m "chore(readme): refresh generated signals"
+          git push
