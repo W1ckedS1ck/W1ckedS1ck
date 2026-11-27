@@ -146,6 +146,12 @@ def rendered(readme: str) -> str:
     return out
 
 
+def stamp_only_change(before: str, after: str) -> bool:
+    """A timestamp bump alone is not worth a commit."""
+    marker = re.compile(r"<!-- Last updated: .*? -->")
+    return marker.sub("", before) == marker.sub("", after)
+
+
 def main() -> int:
     with open(README, encoding="utf-8") as fh:
         current = fh.read()
@@ -153,6 +159,10 @@ def main() -> int:
     updated = rendered(current)
     if updated == current:
         print("README is already up to date")
+        return 0
+
+    if stamp_only_change(current, updated):
+        print("only the timestamp changed; leaving the README untouched")
         return 0
 
     if "--write" in sys.argv:
