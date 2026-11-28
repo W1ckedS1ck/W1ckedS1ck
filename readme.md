@@ -109,7 +109,7 @@ Pulled from the DreamSeed repository and its Actions on a schedule — not copy-
 <!-- AUTO:START -->
 | Signal | Result | Last run |
 | --- | --- | --- |
-| 🧪 DR drill — restore an hourly backup on a fresh server | ✅ success | 23 Nov 2026 · [run](https://github.com/W1ckedS1ck/DreamSeed/actions/runs/45273285194) |
+| 🧪 DR drill — restore an hourly backup on a fresh server | ✅ success | 27 Nov 2026 · [run](https://github.com/W1ckedS1ck/DreamSeed/actions/runs/45273285194) |
 | 🚀 Production deploy | ✅ success | 12 Nov 2026 · [run](https://github.com/W1ckedS1ck/DreamSeed/actions/runs/43194317233) |
 | ✅ CI on `main` | ✅ success | 27 Nov 2026 · [run](https://github.com/W1ckedS1ck/DreamSeed/actions/runs/45952206537) |
 <!-- AUTO:END -->
@@ -204,4 +204,4 @@ Infrastructure questions, review requests or a repo you want a second pair of ey
 
 </div>
 
-<!-- Last updated: 2026-11-27 12:57:39 UTC -->
+<!-- Last updated: 2026-11-28 13:44:58 UTC -->
